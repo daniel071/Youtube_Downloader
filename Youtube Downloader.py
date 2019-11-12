@@ -19,9 +19,9 @@ def my_hook(d):
         print('Done downloading, now converting ...')
 
 
-def convert(song_title, url, song_artist, song_date, song_album, song_genre, song_track, song_out_of):
+def convert(directory, song_title, url, song_artist, song_date, song_album, song_genre, song_track, song_out_of):
     print("Downloading...")
-    outtmpl = song_title + '.%(ext)s'
+    outtmpl = directory + song_title + '.%(ext)s'
 
     ydl_opts = {
         'outtmpl': outtmpl,
@@ -38,7 +38,7 @@ def convert(song_title, url, song_artist, song_date, song_album, song_genre, son
         ydl.download([url])
 
     print("Adding metadata...")
-    metatag = EasyID3("Testvidnew3.mp3")
+    metatag = EasyID3(directory + song_title + '.mp3')
     metatag['title'] = song_title
     metatag['artist'] = song_artist
     metatag['date'] = song_date
@@ -57,16 +57,16 @@ print("Created by Daniel Pavela")
 print("\n --------------------- \n")
 
 while True:
-    user_URL = input("Input youtube URL")
-    user_directory = input("Input output folder")
-    user_title = input("Input Song Title")
-    user_artist = input("Input Song Artist")
-    user_release = input("Input Song Release Date")
-    user_album = input("Input Song Album")
-    user_genre = input("Input Song Genre")
-    user_currentTrack = input("Input Song Current Track")
-    user_allTracks = input("Input Song Amount of tracks")
+    user_URL = input("Input Youtube URL: ")
+    user_directory = input("Input output folder: ")
+    user_title = input("Input Song Title: ")
+    user_artist = input("Input Song Artist: ")
+    user_release = input("Input Song Release Date: ")
+    user_album = input("Input Song Album: ")
+    user_genre = input("Input Song Genre: ")
+    user_currentTrack = input("Input Song Current Track: ")
+    user_allTracks = input("Input Song Amount of tracks: ")
 
-    convert(user_title, user_URL, user_artist, user_release, user_album, user_genre, user_currentTrack, user_allTracks)
+    convert(user_directory, user_title, user_URL, user_artist, user_release, user_album, user_genre, user_currentTrack, user_allTracks)
 
-    input("Press any key to continue...")
+    input("\nPress any key to continue...")
