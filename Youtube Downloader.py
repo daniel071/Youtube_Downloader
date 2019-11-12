@@ -34,8 +34,12 @@ def convert(directory, song_title, url, song_artist, song_date, song_album, song
         'logger': MyLogger(),
         'progress_hooks': [my_hook],
     }
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        ydl.download([url])
+    try:
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+    except youtube_dl.utils.DownloadError as e:
+        print("An Error has occurred:", e, "\nPlease try again")
+        return
 
     print("Adding metadata...")
     metatag = EasyID3(directory + song_title + '.mp3')
