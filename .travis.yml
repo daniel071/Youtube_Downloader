@@ -4,4 +4,4 @@ install:
   - pip install -r requirements.txt
   - pip install .
   
-script: /Youtube Downloader GUI.py
+script: python3 "Youtube Downloader GUI.py"
