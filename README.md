@@ -7,8 +7,14 @@
 
 ## The Open Source Youtube Downloader!
 
+### Screenshots:
+#### How the current GUI looks:
+![Screenshot 1](https://lh3.googleusercontent.com/Vd16PgdFhMLD4YSwEdfG2UZXVlfP6HZf_a-k0egG40icXrNYRW79GaGk6hIK2AzPG0MbgDjQqwh_FA=w1920-h944)
+#### Debug commands are outputted to the command line:
+![Screenshot 2](https://lh4.googleusercontent.com/1X_M8dF6UuQrQqeRTcdOO9OI366u1jXxHIIMUT8IjV1WbZ_3mAqors0zOEiHWRBg97pgKBBBqIrInQ=w1920-h944)
+
 ### Why I made this:
-Most online Youtube to MP3 converters are filled with intrusive advertisements and popups, some even contain malware. I made this using the youtube_dl python package to download videos from onlne.
+Most online Youtube to MP3 converters are filled with intrusive advertisements and popups, some even contain malware. I made this using the youtube_dl python package to download videos from online.
 
 ### How you can help:
  There are 3 easy steps to contributing to this project:
