@@ -25,6 +25,8 @@ Most online Youtube to MP3 converters are filled with intrusive advertisements a
 Find this in more detail [here](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork)
 
 ### How to install:
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows 10 Logo" width="150"/> <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Windows_logo_-_2006.svg" alt="Windows 7 Logo" width="150"/>
+#### On Windows 7/8.1/10
 Youtube Downloader uses a virtual environment so all the packages come pre-installed,
 the following steps are:
 
@@ -37,4 +39,33 @@ the following steps are:
 
 4. Input the URL link to the youtube video, any metadata for it and where you'd like to save it (The program will create a file inside the directory you chose)
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo" width="150"/> <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/MacOS_logo_%282017%29.svg" alt="MacOS Logo" width="150"/>
+#### On Unix based operating systems (Linux, Mac-OS, BSD)
+
+##### Automated installation:
+1. Go into your terminal and cd into the git directory
+
+2. Run
+```bash
+source _StartGUI.sh
+```
+
+3. Enjoy!
+
+##### Manual installation
+1. Go into your terminal and cd into the git directory
+
+2. Run the following commands
+```bash
+# Initialises the virtualenv
+source /venv/bin/activate
+
+# Installs required dependacies
+sudo pip3 install -r requirements.txt --upgrade
+
+# Runs the program
+python3 "Youtube Downloader GUI.py"
+```
+
 > Contributed by Daniel Pavela
+
