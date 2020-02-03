@@ -68,5 +68,25 @@ sudo pip3 install -r requirements.txt --upgrade
 python3 "Youtube Downloader GUI.py"
 ```
 
+### Troubleshooting
+
+#### Dependency issues
+If the python program is failing to start due to packages not being installed try the following:
+1. Make sure you are in the virtual environment  
+ #### On Windows:
+  Open command promt in the git directory and run  
+  ```CALL venv\Scripts\activate.bat```
+  
+ #### On Linux/MacOS/FreeBSD:
+  Open terminal in the git directory and run  
+  ```source /venv/bin/activate```
+  
+<br></br>
+2. Install required dependacies
+ For both Windows and Linux/MacOS/FreeBSD, try running this in your terminal/command prompt: <br></br>
+ ```sudo pip3 install -r requirements.txt --upgrade```
+<br></br>
+If it still doesn't work, feel free to open up an issue
+
 
 > Contributed by Daniel Pavela
