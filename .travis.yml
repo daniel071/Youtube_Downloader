@@ -4,4 +4,4 @@ install:
   - pip install -r requirements.txt --upgrade
   - pip install .
   
-script: source _StartGUI.sh
+script: "|source /venv/bin/activate|python3 "Youtube Downloader GUI.py""
