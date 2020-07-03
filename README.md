@@ -40,7 +40,7 @@ the following steps are:
 4. Input the URL link to the youtube video, any metadata for it and where you'd like to save it (The program will create a file inside the directory you chose)
 ---
 #### On Unix based operating systems (Linux, MacOS, FreeBSD)
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo" width="150"/> <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/MacOS_logo_%282017%29.svg" alt="MacOS Logo" width="150"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo" width="150"/> <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/MacOS_logo_%282017%29.svg" alt="MacOS Logo" width="150"/>
 ##### Automated installation:
 1. Go into your terminal and cd into the git directory
 
